@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./output.css">
+  <script src="./script.js" defer></script>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-Light_grey grid place-items-center relative min-h-screen px-5">
+  <main class="bg-White  px-5 py-10 rounded-3xl rounded-br-[6rem] md:w-[500px] md:px-7">
+    <form action="/" class="w-full mb-5" id="form">
+      <div class="flex justify-between uppercase  gap-4 mb-12 md:mb-8 md:w-[21rem]">
+
+        <div class="input">
+          <p class="text-xs font-pop_bold text-Smokey_grey tracking-widest mb-0.5">Day</p>
+          <input type="text" placeholder="DD"class="field font-bold w-[5.5rem] border py-2 ps-2 rounded-lg outline-none md:w-[6.5rem] hover:border-Purple" id="day">
+        </div>
+
+        <div class="input">
+          <p class="text-xs font-pop_bold text-Smokey_grey tracking-widest mb-0.5">Month</p>
+          <input type="text"placeholder="MM" class="field font-bold w-[5.5rem] py-2 border ps-2 rounded-lg outline-none md:w-[6.5rem] hover:border-Purple" id="month">
+        </div>
+
+        <div class="input">
+          <p class="text-xs font-pop_bold text-Smokey_grey tracking-widest mb-0.5">Year</p>
+          <input type="text" placeholder="YYYY" class="field font-bold w-[5.5rem] py-2 border ps-2 rounded-lg outline-none md:w-[6.5rem] hover:border-Purple" id="year">
+        </div>
+
+      </div>
+      <hr>
+      <div class="w-full grid place-items-center -mt-6 static md:place-items-end ">
+        <input type="submit" value="" class="bg-Purple bg-arrow bg-no-repeat bg-center p-3 rounded-full px-6 bg-[length:1.4rem_1.5rem] hover:bg-Off_black" id="submit">
+      </div>
+          
+    </form>
+
+    <article class="w-full">
+      <h1 class="text-5xl font-pop_ex_italic text-Off_black md:text-[3.8rem]"><span class="text-Purple" id="year_holder">- -</span> years</h1>
+    </article>
+
+    <article class="w-full">
+      <h1 class="text-5xl font-pop_ex_italic text-Off_black md:text-[3.8rem]"><span class="text-Purple" id="month_holder">- -</span> months</h1>
+    </article>
+
+    <article class="w-full">
+      <h1 class="text-5xl font-pop_ex_italic text-Off_black md:text-[3.8rem]"><span class="text-Purple" id="day_holder">- -</span> days</h1>
+    </article>
+     
+     
+    
+  </main>
+
+ 
+  <div class="attribution absolute w-full bottom-0">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Prajwal dhuli</a>.
+  </div>
+</body>
+</html>
